@@ -1,5 +1,6 @@
 package org.example.crudbasico.controllers;
 
+import jakarta.validation.Valid;
 import org.example.crudbasico.entities.Ejemplar;
 import org.example.crudbasico.entities.Prestamo;
 import org.example.crudbasico.repositories.PrestamoRepository;
@@ -8,8 +9,6 @@ import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import javax.validation.Valid;
 import java.util.List;
 
 @RestController

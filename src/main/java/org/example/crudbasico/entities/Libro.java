@@ -1,8 +1,7 @@
 package org.example.crudbasico.entities;
 
 import jakarta.persistence.*;
-
-import javax.validation.constraints.*;
+import jakarta.validation.constraints.*;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
