@@ -10,10 +10,10 @@ import java.util.Set;
 public class Libro {
     @Id
     @Column(name = "isbn", nullable = false, length = 20)
-    @NotBlank(message = "El ISBN no puede estar vacío")
-    @NotNull(message = "El ISBN no puede estar vacío")
+    @NotBlank(message = "El ISBN tiene que tener contenido")
+    @NotNull(message = "El ISBN no puede estar nulo")
     @NotEmpty(message = "El ISBN no puede estar vacío")
-    @Pattern(regexp = "^97[89]-\\d-\\d{2,5}-\\d{2,7}-\\d$\n", message = "El ISBN debe tener un formato válido")
+    @Pattern(regexp = "^978-\\d-\\d{1,3}-\\d{1,6}-\\d$", message = "El ISBN debe tener un formato válido")
     private String isbn;
 
     @Column(name = "titulo", nullable = false, length = 200)
